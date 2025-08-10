@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 using jsbind::Function;
+using namespace webbind;
 
 int main() {
     emlite::init();
