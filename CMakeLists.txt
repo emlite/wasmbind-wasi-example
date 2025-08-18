@@ -1,16 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(wasmbind-example)
 
-include(FetchContent)
-
-FetchContent_Declare(
-    wasmbind
-    GIT_REPOSITORY https://github.com/emlite/wasmbind.git
-    GIT_TAG main
-    GIT_SHALLOW True
-)
-
-FetchContent_MakeAvailable(wasmbind)
+add_subdirectory(wasmbind)
 
 add_executable(main src/main.cpp)
 target_link_libraries(main PRIVATE webbind::webbind)
