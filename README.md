@@ -7,7 +7,7 @@ Do note that using npm is not strictly necessary, however it simplifies bundling
 ## Usage
 ```bash
 git clone https://github.com/emlite/wasmbind-wasi-example
-cd wasmbind-example
+cd wasmbind-wasi-example
 npm i
 npm run cmake:config
 npm run cmake:build
