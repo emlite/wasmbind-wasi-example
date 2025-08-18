@@ -17,7 +17,7 @@ int main() {
         document.getElementsByTagName("body").item(0);
     auto button = document.createElement("BUTTON");
     button.textContent("Click me");
-    printf("%s\n", button.textContent().c_str());
+    printf("%s\n", button.textContent().c_str().get());
     button.addEventListener(
         "click",
         Function::Fn<void(PointerEvent)>([=](auto /*p*/) {
